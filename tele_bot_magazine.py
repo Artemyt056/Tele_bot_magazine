@@ -225,5 +225,125 @@ def get_query(query):
                            reader(list_product, name_prod, address, 'rb'),
                            caption=reader(list_product, name_prod, address, 'r'))
 
+    if query.data == 'T-short':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/T-short'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    elif query.data == 'T-shirt':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/T-shirt'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    if query.data == 'soks':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/soks'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    elif query.data == 'short':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/short'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    if query.data == 'panama':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/panama'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    elif query.data == 'Dress':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/Dress'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    if query.data == 'dgence':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/dgence'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
+    elif query.data == 'Blazer':
+        # алготитм завантаження ресурсів товарів
+        address = f'magazine/clothes/Blazer'
+
+        # завантаження ресурсів
+        list_product = listdir(address)
+
+        list_uniq_name = list({el.split('.')[0] for el in list_product})
+
+        for name_prod in list_uniq_name:
+            # Відправка фотограій та опису товару
+            bot.send_photo(query.message.chat.id,
+                           reader(list_product, name_prod, address, 'rb'),
+                           caption=reader(list_product, name_prod, address, 'r'))
+
 
 bot.polling()
